@@ -5,8 +5,7 @@ let pkgs = import ./nixpkgs.nix {};
       ghcid
       cabal-install
       haskellPackages.ormolu
-      haskellPackages.hoogle
-      (haskell-language-server.override { supportedGhcVersions = [ "8106" ]; })
+      haskell-language-server
     ];
 in
 pkgs.mkShell {
